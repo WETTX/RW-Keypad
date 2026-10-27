@@ -1,0 +1,1 @@
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Import-Module AudioDeviceCmdlets; $V = Get-AudioDevice -Playback; if ($V.Index -eq "3") {Set-AudioDevice -Index "1"}; if ($V.Index -eq "1") {Set-AudioDevice -Index "3"}"
